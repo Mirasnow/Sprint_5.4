@@ -1,5 +1,6 @@
 class Locators:
     name_input = "//label[contains(text(), 'Имя')]/following-sibling::input[@name='name']"
+    name_value = "//input[@name='name']"
     email_input = "//label[contains(text(), 'Email')]/following-sibling::input[@name='name']"
     password_input = "//label[contains(text(), 'Пароль')]/following-sibling::input[@name='Пароль']"
     signin_button = ".//button[text()='Зарегистрироваться']"
@@ -11,5 +12,8 @@ class Locators:
     logotype_button = ".//div[@class='AppHeader_header__logo__2D0X2']"
     personal_account_button = ".//p[text()='Личный Кабинет']"
     constructor_bread = ".//span[text()='Булки']"
+    selected_bread = "//*[contains(@class, 'tab_tab_type_current') and span[text()='Булки']]"
     constructor_sauce = ".//span[text()='Соусы']"
+    selected_sauce = "//*[contains(@class, 'tab_tab_type_current') and span[text()='Соусы']]"
     constructor_topping = ".//span[text()='Начинки']"
+    selected_topping = "//*[contains(@class, 'tab_tab_type_current') and span[text()='Начинки']]"
